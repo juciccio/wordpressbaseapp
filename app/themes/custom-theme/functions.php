@@ -7,27 +7,27 @@ function custom_styles() {
 	if (@file_get_contents('http://localhost:3000/')) {
 	  wp_enqueue_style( 'fontawesome' );
 	} else {
-	  wp_register_style( 'hoo_style', asset('app.css'), ['fontawesome'], false, false );
+	  wp_register_style( 'custom_style', asset('app.css'), ['fontawesome'], false, false );
   
-	  wp_enqueue_style( 'hoo_style' );
+	  wp_enqueue_style( 'custom_style' );
 	}
 }
 
 // Register Script
 function custom_scripts() {
 	if (@file_get_contents('http://localhost:3000/')) {
-		wp_register_script( 'hoo_script', 'http://localhost:3000/app/themes/hoojobs/assets/dist/app.js',
+		wp_register_script( 'custom_script', 'http://localhost:3000/app/themes/custom-theme/assets/dist/app.js',
 		['jquery'],
 		false,
 		false );
 	} else {
-		wp_register_script( 'hoo_script', asset('app.js'),
+		wp_register_script( 'custom_script', asset('app.js'),
 		['jquery'],
 		false,
 		false );
 	}
 
-  wp_enqueue_script('hoo_script');
+  wp_enqueue_script('custom_script');
 }
 
 // Hook into the 'wp_enqueue_scripts' action
