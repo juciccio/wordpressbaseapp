@@ -9,7 +9,7 @@ Wordpress Base App
 ## Setup
 
 ```shell
-$ composer create-project juciccio/wordpressbaseapp app
+$ composer install
 $ npm install
 ```
 
