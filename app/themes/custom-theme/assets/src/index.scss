@@ -1,0 +1,23 @@
+/**
+ * Bootstrap
+ *
+ * We are including the main file of Bootstrap but you can edit this and import
+ * only the modules that you want, something like this:
+ *
+ * @import '~bootstrap/scss/functions';
+ * @import '~bootstrap/scss/variables';
+ * @import '~bootstrap/scss/mixins';
+ * @import '~bootstrap/scss/grid';
+ * @import '~bootstrap/scss/modal';
+ *
+ * Remember that the files variables.scss and mixins.scss are required.
+ *
+ */
+
+ @import '~bootstrap/scss/bootstrap.scss';
+
+/**
+ * App specific files.
+ */
+@import 'scss/variables';
+@import 'scss/custom';

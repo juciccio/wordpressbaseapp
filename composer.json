@@ -1,0 +1,94 @@
+{
+  "name": "juciccio/wordpressbaseapp",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Julián Ciccioli",
+      "email": "ju.ciccio@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advancedcustomfields/repeater-field",
+        "type": "wordpress-plugin",
+        "version": "1.1.1",
+        "dist": {
+          "type": "zip",
+          "url": "https://download.advancedcustomfields.com/QJF7-L4IX-UCNP-RF2W/trunk"
+        }
+      },
+      "require": {
+        "wpackagist-plugin/advanced-custom-fields": "~4.3"
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advancedcustomfields/options-page",
+        "type": "wordpress-plugin",
+        "version": "1.2.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://download.advancedcustomfields.com/OPN8-FA4J-Y2LW-81LS/trunk"
+        }
+      },
+      "require": {
+        "wpackagist-plugin/advanced-custom-fields": "~4.3"
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advancedcustomfields/flexible-content",
+        "type": "wordpress-plugin",
+        "version": "1.1.1",
+        "dist": {
+          "type": "zip",
+          "url": "https://download.advancedcustomfields.com/FC9O-H6VN-E4CL-LT33/trunk"
+        }
+      },
+      "require": {
+        "wpackagist-plugin/advanced-custom-fields": "~4.3"
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advancedcustomfields/gallery",
+        "type": "wordpress-plugin",
+        "version": "1.1.1",
+        "dist": {
+          "type": "zip",
+          "url": "https://download.advancedcustomfields.com/GF72-8ME6-JS15-3PZC/trunk"
+        }
+      },
+      "require": {
+        "wpackagist-plugin/advanced-custom-fields": "~4.3"
+      }
+    }
+  ],
+  "extra": {
+    "wordpress-install-dir": "wordpress",
+    "installer-paths": {
+      "app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "app/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "require": {
+    "johnpbloch/wordpress": "~4",
+    "wpackagist-plugin/advanced-custom-fields": "~4.3",
+    "advancedcustomfields/gallery": "~1.1",
+    "advancedcustomfields/flexible-content": "~1.1",
+    "advancedcustomfields/repeater-field": "~1.1",
+    "advancedcustomfields/options-page": "1.2.0"
+  }
+}
