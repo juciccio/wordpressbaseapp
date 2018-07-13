@@ -1,4 +1,5 @@
 import './index.scss';
+import 'bootstrap';
 
 __webpack_public_path__ = 'http://localhost:3000/app/themes/custom-theme/assets/dist/';
 
