@@ -20,6 +20,12 @@ $ cp wp-config-sample.php wp-config.php
 $ vi wp-config.php
 ```
 
+Change "custom-theme" name inside app/themes/ for your project's name.
+
+In "webpack.common.js" replace each occurrence for "custom-theme" by your new theme name (the one you changed in the previous step).
+
+Do the same in "webpack.dev.js".
+
 ## App structure
 
 Unlike most wordpress projects this one has the theme folder separated from the wordpress folder. You will find languages, uploads, theme, upgrades and plugins inside the "app" folder.
