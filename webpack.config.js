@@ -1,5 +1,7 @@
 const path = require('path');
 
+const webpack = require('webpack');
+
 // include the js minification plugin
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
@@ -47,6 +49,25 @@ module.exports = {
     ]
   },
   plugins: [
+    // Load modules for jQuery, Popper and Bootstrap javascript components
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default'],
+      Alert: 'exports-loader?Alert!bootstrap/js/dist/alert',
+      Button: 'exports-loader?Button!bootstrap/js/dist/button',
+      Carousel: 'exports-loader?Carousel!bootstrap/js/dist/carousel',
+      Collapse: 'exports-loader?Collapse!bootstrap/js/dist/collapse',
+      Dropdown: 'exports-loader?Dropdown!bootstrap/js/dist/dropdown',
+      Modal: 'exports-loader?Modal!bootstrap/js/dist/modal',
+      Popover: 'exports-loader?Popover!bootstrap/js/dist/popover',
+      Scrollspy: 'exports-loader?Scrollspy!bootstrap/js/dist/scrollspy',
+      Tab: 'exports-loader?Tab!bootstrap/js/dist/tab',
+      Toast: 'exports-loader?Toast!bootstrap/js/dist/toast',
+      Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
+      Util: 'exports-loader?Util!bootstrap/js/dist/util'
+    }),
     // clean out build directories on each build
     new CleanWebpackPlugin([assetsDir + '/js/build/*', assetsDir + '/css/build/*'], {
       watch: true

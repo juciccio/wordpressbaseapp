@@ -27,7 +27,7 @@ Change "AssetDir" variable in webpack.config.js for your assets directory.
 Unlike most wordpress projects this one has the theme folder separated from the wordpress folder. You will find languages, uploads, theme, upgrades and plugins inside the "app" folder.
 
 
-## RTFM
+## Documentation
 
 This app depends on various projects, if you are having some troubles read the project's docs and if you can't solve it [leave an issue](https://github.com/juciccio/wordpressbaseapp/issues).
 

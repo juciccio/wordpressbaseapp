@@ -25,28 +25,28 @@
     "url": "https://github.com/juciccio/wordpressbaseapp/issues"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.5",
-    "@babel/preset-env": "^7.1.5",
-    "autoprefixer": "^9.4.2",
-    "babel-loader": "^8.0.4",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "^9.4.7",
+    "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
-    "bootstrap": "^4.1.1",
-    "clean-webpack-plugin": "^1.0.0",
+    "bootstrap": "^4.3.1",
+    "clean-webpack-plugin": "^1.0.1",
     "css-loader": "^1.0.1",
     "mini-css-extract-plugin": "^0.4.4",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "url-loader": "^1.1.2",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-livereload-plugin": "^2.1.1"
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-livereload-plugin": "^2.2.0"
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.7"
   }
 }
